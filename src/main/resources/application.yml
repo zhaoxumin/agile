@@ -1,0 +1,38 @@
+#配置端口
+server:
+  port: 8888
+  servlet:
+    context-path: /agile
+
+spring:
+  application:
+    name: agile
+  http:
+  servlet:
+    multipart:
+      max-file-size: 50Mb
+      max-request-size: 100Mb
+  jackson:
+    serialization:
+      write-dates-as-timestamps: true
+  datasource:
+    url: jdbc:mysql://:3306/agile?useUnicode=true&characterEncoding=utf-8&useSSL=true
+    username: root
+    password: zhao096520
+    driver-class-name: com.mysql.jdbc.Driver
+
+#mybatis
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.agile.go.entity
+  configuration:
+    map-underscore-to-camel-case: true
+
+aliyun:
+  oss:
+    endPoint: oss-cn-hangzhou.aliyuncs.com
+    accessKeyId:
+    accessKeySecret:
+    bucketName: uface-park-pay
+    ossUrl: http://uface-park-pay.oss-cn-hangzhou.aliyuncs.com
+
