@@ -33,6 +33,6 @@ aliyun:
     endPoint: oss-cn-hangzhou.aliyuncs.com
     accessKeyId:
     accessKeySecret:
-    bucketName: uface-park-pay
-    ossUrl: http://uface-park-pay.oss-cn-hangzhou.aliyuncs.com
+    bucketName:
+    ossUrl:
 
